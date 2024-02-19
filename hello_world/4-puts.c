@@ -4,10 +4,7 @@
  * initial description
  */
 
-/**
- * description for main function
- */
-int main(void)
+int main(void) //description for main function
 {
 	const char *message = "\"Programming is like building a multilingual puzzle";
 
