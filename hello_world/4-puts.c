@@ -6,6 +6,6 @@ int main(void)
 
 	puts(message);
 
-	return(0);
+	return (0);
 
 }
