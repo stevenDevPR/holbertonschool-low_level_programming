@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="1-compiler.c" FILENAME=$(basename "$CFILE".c) gcc -c "$CFILE" -o "${FILENAME}.o" 2>/dev/null
+CFILE="1-compiler.c" FILENAME=$(basename "$CFILE".c) gcc -c "$CFILE" -o "${FILENAME}.o"
