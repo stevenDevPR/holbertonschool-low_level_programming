@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="2-assembler.c" FILENAME=$(basename "$CFILE".c) cpp -s "$CFILE" -o "${FILENAME}.o"
+CFILE="2-assembler.c" FILENAME=$(basename "$CFILE".c) gcc -S "${FILENAME}.c" -o "${FILENAME}.s"
