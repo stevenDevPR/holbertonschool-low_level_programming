@@ -1,0 +1,2 @@
+#!/bin/bash
+CFILE="3-name" | gcc -o "cisfun"
