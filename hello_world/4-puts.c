@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * initial description
- * program for task 4
+ * initial short decription for program
  */
 
 int main(void)
