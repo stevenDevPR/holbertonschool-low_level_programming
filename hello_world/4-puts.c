@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 /**
- * int main(void)= main function
- * const char *message= message as a constant with character type
- * return (0) = when finish correctly without error will return 0,
- * if error is present it will return 1
+ * initial description
  */
 
-int main(void)
+int main(void) /**description for int main 
+*/
 {
 	const char *message = "\"Programming is like building a multilingual puzzle";
 
