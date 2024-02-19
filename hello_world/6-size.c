@@ -13,7 +13,7 @@ int main(void)
 	char oneByte;
 	long int fourInt;
 	long long int eightBytes;
-	float fourBytes;
+	float fourByte;
 
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
 	printf("Size of an int: %zu byte(s)\n", sizeof(int));
