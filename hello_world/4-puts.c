@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 /**
- * initial short decription for program
+ * main -  This is the entry point of the code
+ *
+ * main(void) - doesnt return anything
+ *
+ * Return:  0
  */
 
 int main(void)
 {
-	char  message[] = "\"Programming is like building a multilingual puzzle";
+	char message[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(message);
 
