@@ -4,9 +4,9 @@
  * initial description
  */
 
-int main(void)
+int main(void)**/description*/
 {
-	const char *message = "\"Programming is like building a multilingual puzzle";
+	char[] *message = "\"Programming is like building a multilingual puzzle";
 
 	puts(message);
 
