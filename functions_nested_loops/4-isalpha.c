@@ -18,7 +18,7 @@ int character(void)
 /**
  * _isalpha - function to check if is a letter
  *
- * @c: value to be checked
+ * @c: character to be checked
  *
  * Return: 1 if c is a letter, 0 otherwise
  */
