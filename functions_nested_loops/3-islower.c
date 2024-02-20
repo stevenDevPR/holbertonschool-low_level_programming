@@ -5,11 +5,11 @@
  * Return: 0
  */
 
-int _islower(int c);
 
 int clower(void)
 {
-	_islower(c);
+
+	_islower('c');
 
 	return (0);
 
