@@ -2,6 +2,8 @@
 /**
  * character - function to start program
  *
+ * @c: character to be printed
+ *
  * Return: 0
  */
 
