@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - start the program
@@ -8,9 +8,16 @@
 
 int main(void)
 {
-	printf("_putchar\n");
-
-
+	print_putchar();
 
 	return (0);
+}
+
+void print_putchar(void)
+{
+	_putchar('_');
+	_putchar('a');
+	_putchar('a');
+	_putchar('a');
+	_putchar('a');
 }
