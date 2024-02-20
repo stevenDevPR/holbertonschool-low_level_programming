@@ -8,7 +8,7 @@
 
 int number(void)
 {
-	print_sign('0');
+	print_sign(0);
 
 	return (0);
 
