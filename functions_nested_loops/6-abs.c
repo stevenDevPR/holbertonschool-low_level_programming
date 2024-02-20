@@ -1,8 +1,8 @@
 #include "main.h"
 
-int abs(void)
+int absolute(void)
 {
-	abs(5);
+	_abs(5);
 
 	return (0);
 }
