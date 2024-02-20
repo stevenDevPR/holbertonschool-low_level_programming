@@ -15,9 +15,10 @@ int main(void)
 		putchar(digits + '0');
 
 		if (digits <= 8)
+		{
 			putchar(',');
 			putchar(' ');
-
+		}
 	}
 	putchar('\n');
 
