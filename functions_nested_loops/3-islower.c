@@ -22,7 +22,7 @@ int clower(void)
 int _islower(int c)
 {
 
-	if (c == 'c')
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
