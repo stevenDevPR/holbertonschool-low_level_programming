@@ -31,7 +31,8 @@ void print_alphabet_x10(void)
 			_putchar(j);
 		}
 		i++;
+		_putchar('\n');
 	} while (i <= 9);
-	_putchar('\n');
+
 
 }
