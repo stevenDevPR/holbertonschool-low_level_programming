@@ -8,20 +8,16 @@
 
 int main(void)
 {
-	int i;
-	int j;
+	int digits;
 
-	for (i = 0; i <= 9; i++)
+	for (digits = 0; digits <= 9; digits++)
 	{
-		for (j = 0; i <= 9; j++)
-		{
-			if (i != j)
-			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(',');
-			}
-		}
+		putchar(digits + '0');
+
+		if (digits <= 8)
+			putchar(',');
+			putchar(' ');
+
 	}
 	putchar('\n');
 
