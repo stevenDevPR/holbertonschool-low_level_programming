@@ -2,8 +2,6 @@
 /**
  * abc - intitial main function
  *
- * print_alphabet() - print the alphabet
- *
  * Return: 0
  */
 
@@ -18,6 +16,10 @@ int abc(void)
 	return (0);
 
 }
+
+/**
+ * print_alphabet - print the alphabet
+ */
 
 void print_alphabet(void)
 {
