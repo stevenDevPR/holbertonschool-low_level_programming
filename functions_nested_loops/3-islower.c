@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * islower - function main
+ * clower - function main
  *
  * Return: 0
  */
 
 int _islower(int c);
 
-int islower(void)
+int clower(void)
 {
-	_islower();
+	_islower('c');
 
 	return (0);
 
@@ -21,9 +21,8 @@ int islower(void)
 
 int _islower(int c)
 {
-	int c;
 
-	if (c == 99)
+	if (c == 'c')
 	{
 		return (1);
 	}
