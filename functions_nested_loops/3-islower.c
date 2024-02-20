@@ -9,7 +9,7 @@ int _islower(int c);
 
 int clower(void)
 {
-	_islower();
+	_islower(c);
 
 	return (0);
 
