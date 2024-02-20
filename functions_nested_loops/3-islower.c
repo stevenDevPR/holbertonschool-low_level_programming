@@ -9,7 +9,7 @@ int _islower(int c);
 
 int islower(void)
 {
-	is_lower();
+	_islower();
 
 	return (0);
 
