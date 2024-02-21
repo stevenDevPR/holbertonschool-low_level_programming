@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int integer(void)
+int integer()
 {
 	add(5, 6);
 
