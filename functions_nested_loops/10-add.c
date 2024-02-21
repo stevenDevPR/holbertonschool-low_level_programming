@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int integer()
+int integer(void)
 {
 	add(5, 6);
 
@@ -15,5 +15,5 @@ int add(int num1, int num2)
 
 	sum = num1 + num2;
 
-	printf("%d", sum);
+	return (sum);
 }
