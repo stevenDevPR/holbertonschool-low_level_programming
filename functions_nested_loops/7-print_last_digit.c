@@ -22,10 +22,10 @@ int digit(void)
  * Return: return lastDigit
  */
 
-int print_last_digit(int digit)
+int print_last_digit(int digit, int lastDigit)
 {
 
-	lastDigit = digit % 10;
+	int lastDigit = digit % 10;
 
 	_putchar(lastDigit);
 	return (lastDigit);
