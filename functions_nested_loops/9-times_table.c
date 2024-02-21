@@ -23,8 +23,8 @@ void times_table(void)
 
             if (j > 0)
             {
-                _putchar(',');
-                _putchar(' ');
+                _putchar(44);
+                _putchar(32);
             }
 
             if (result < 10)
