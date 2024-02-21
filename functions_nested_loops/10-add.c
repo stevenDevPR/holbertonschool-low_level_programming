@@ -11,7 +11,7 @@ int integer(void)
 
 int add(int num1, int num2)
 {
-	int num1, num2, sum;
+	int sum;
 
 	sum = num1 + num2;
 
