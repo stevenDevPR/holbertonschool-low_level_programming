@@ -11,9 +11,11 @@ int natural(void)
 
 void print_to_98(int n)
 {
+	int i;
+
 	if (n < 98)
 	{
-		for (n = n; n <= 98; n++)
+		for (i = n; n <= 98; n++)
 		{
 	
 		printf("%d ,", n);
