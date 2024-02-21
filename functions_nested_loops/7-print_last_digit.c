@@ -28,6 +28,11 @@ int print_last_digit(int digit)
 
 	lastDigit = digit % 10;
 
+	if (lastDigit < 0)
+	{
+		lastDigit = -num;
+	}
+
 	_putchar('0' + lastDigit);
 
 	return (lastDigit);
