@@ -10,7 +10,9 @@ int table(void)
 
 void times_table(void)
 {
-	int i, j, result;
+	int i;
+	int j;
+	int result;
 	
 	result = i * j;
 
