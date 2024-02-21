@@ -3,7 +3,7 @@
 
 int natural(void)
 {
-	print_to_98(5);
+	print_to_98(n);
 
 	return (0);
 
