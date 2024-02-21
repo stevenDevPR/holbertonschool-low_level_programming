@@ -13,7 +13,9 @@ int tables(void)
  */
 void times_table(void)
 {
-    int i, j, result;
+    int i;
+    int j;
+    int result;
 
     for (i = 0; i <= 9; i++)
     {
