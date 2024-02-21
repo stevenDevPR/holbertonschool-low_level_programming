@@ -10,12 +10,20 @@ int table(void)
 
 void times_table(void)
 {
-	int i;
+	int i, j;
+	
+	int result = i * j;
 
 	for (i = 0; i <= 9; i++)
 	{
-		_putchar((i + 0) *(0 + i) + 0);
-		_putchar(44);
+		for (j = 0; j <= 9; j++)
+			_putchar(result + '0');
+
+		if (j < 9)
+			_putchar(44);
+			_putchar(32);
+
 	}
+	_putchar('\n');
 
 }
