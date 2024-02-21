@@ -24,7 +24,6 @@ int digit(void)
 
 int print_last_digit(int digit)
 {
-	int digit;
 
 	lastDigit = digit % 10;
 
