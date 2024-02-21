@@ -1,19 +1,15 @@
 #include "main.h"
 
-/**
- * table - Entry point
- *
- * Return: Always 0
- */
-int table(void)
+int tables(void)
 {
-    times_table();
+	times_table();
 
-    return (0);
+	return (0);
+
 }
 
 /**
- * times_table - Print the 9 times table, starting with 0
+ * times_table - Prints the 9 times table, starting with 0
  */
 void times_table(void)
 {
@@ -32,18 +28,9 @@ void times_table(void)
             }
 
             if (result < 10)
-            {
                 _putchar(' ');
-            }
-
-            if (result < 10)
-            {
-                _putchar(' ');
-            }
             else
-            {
                 _putchar(result / 10 + '0');
-            }
 
             _putchar(result % 10 + '0');
         }
