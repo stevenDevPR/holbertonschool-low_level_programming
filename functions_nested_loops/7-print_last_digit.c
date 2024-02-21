@@ -22,8 +22,9 @@ int digit(void)
  * Return: return lastDigit
  */
 
-int print_last_digit(int digit, int lastDigit)
+int print_last_digit(int digit)
 {
+	int lastDigit;
 
 	int lastDigit = digit % 10;
 
