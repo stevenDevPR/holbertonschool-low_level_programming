@@ -30,7 +30,7 @@ int print_last_digit(int digit)
 
 	if (lastDigit < 0)
 	{
-		lastDigit = -num;
+		lastDigit = -lastDigit;
 	}
 
 	_putchar('0' + lastDigit);
