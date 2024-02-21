@@ -26,7 +26,7 @@ int print_last_digit(int digit)
 {
 	int digit;
 
-	lastDigit = num % 10;
+	lastDigit = digit % 10;
 
 	_putchar(lastDigit);
 	return (lastDigit);
