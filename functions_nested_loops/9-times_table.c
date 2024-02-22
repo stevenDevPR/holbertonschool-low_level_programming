@@ -13,8 +13,8 @@ int tables(void)
  */
 void times_table(void)
 {
-    char i, j;
-    char result;
+    int i, j;
+    int result;
 
     for (i = 0; i <= 9; i++)
     {
@@ -24,8 +24,8 @@ void times_table(void)
 
             if (j > 0)
             {
-                _putchar(44);
-		_putchar(32);
+                _putchar(',');
+		_putchar(' ');
 	    }
 	    if (result < 10)
 	    {
