@@ -17,8 +17,6 @@ int natural(void)
  * print_to_98 - main function to print until 98
  *
  * @n: value to be checked
- *
- *Return: Always 0
  */
 
 void print_to_98(int n)
@@ -60,8 +58,6 @@ void print_to_98(int n)
 		printf("%d", i);
 	}
 	printf("\n");
-
-	return (0);
 }
 
 
