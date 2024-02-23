@@ -17,33 +17,33 @@ int tables(void)
  */
 void times_table(void)
 {
-    int i, j;
-    int result;
+	int i, j;
 
-    for (i = 0; i <= 9; i++)
-    {
-        for (j = 0; j <= 9; j++)
-        {
-            result = i * j;
+	int result;
 
-            if (j > 0)
-            {
-                _putchar(',');
-                _putchar(' ');
+	for (i = 0; i <= 9; i++)
+	{
+		for (j = 0; j <= 9; j++)
+		{
+			result = i * j;
 
-                if (result < 10)
-                {
-                    _putchar(' ');
-                }
-            }
+			if (j > 0)
+			{
+				_putchar(',');
+				_putchar(' ');
 
-            if (result >= 10)
-            {
-                _putchar(result / 10 + '0');
-            }
+				if (result < 10)
+				{
+					_putchar(' ');
+				}
+			}
 
-            _putchar(result % 10 + '0');
-        }
-        _putchar('\n');
-    }
+			if (result >= 10)
+			{
+				_putchar(result / 10 + '0');
+			}
+			_putchar(result % 10 + '0');
+		}
+		_putchar('\n');
+	}
 }
