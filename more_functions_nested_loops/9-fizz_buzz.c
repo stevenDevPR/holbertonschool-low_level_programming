@@ -41,4 +41,5 @@ void multiples(void)
 			printf("%d ", i);
 		}
 	}
+	printf("\n");
 }
