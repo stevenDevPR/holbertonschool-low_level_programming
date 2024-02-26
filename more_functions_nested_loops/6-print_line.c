@@ -8,11 +8,17 @@
 void print_line(int n)
 {
 	char under = '_';
+	char only = '\n';
 	int i;
 
 	for (i = 0; i <= n; i++)
 	{
 		_putchar(under);
+
+		if (n <= 0)
+		{
+			_putchar(only);
+		}
 	}
 }
 
