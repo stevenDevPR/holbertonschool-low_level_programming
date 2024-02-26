@@ -23,14 +23,14 @@ void print_diagonal(int n)
 			{
 			_putchar(space);
 			}
-		}
+		
 		_putchar(slash);
+		}
 
 		if (n <= 0)
 		{
 			_putchar(less);
-		
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-}
 }
