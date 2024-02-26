@@ -7,9 +7,6 @@
 
 void print_diagonal(int n)
 {
-	char slash = 92;
-
-	char space = 32;
 
 	int i, j;
 
@@ -21,13 +18,15 @@ void print_diagonal(int n)
 			{
 				if (j != 0)
 				{
-					_putchar(space);
+					_putchar(' ');
 				}
 			}
-			_putchar(slash);
+			_putchar('\\');
 			_putchar('\n');
 		}
 	}
 	else
+	{
 		_putchar('\n');
+	}
 }
