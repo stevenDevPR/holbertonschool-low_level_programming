@@ -9,7 +9,7 @@ void more_numbers(void)
 
 	char j;
 
-	do{
+	do {
 		for (j = 0; j <= 14; j++)
 		{
 			if (j > 9)
