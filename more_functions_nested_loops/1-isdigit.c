@@ -2,6 +2,8 @@
 /**
  * _isdigit - main function
  *
+ * @c: value to be checked
+ *
  * Return: 1 if c is a digit, 0 otherwise
  */
 
