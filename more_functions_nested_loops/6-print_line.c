@@ -15,6 +15,11 @@ void print_line(int n)
 	{
 		_putchar(under);
 
+		for (j = 1; j <= n; j++)
+		{
+			_putchar(' ');
+		}
+
 		if (n <= 0)
 		{
 			_putchar(only);

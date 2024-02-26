@@ -11,17 +11,21 @@ void print_diagonal(int n)
 
 	char less = '\n';
 
-	int i;
+	int i, j;
 
 	for (i = 1; i <= n; i++)
 	{
 		_putchar(slash);
-		_putchar('\n');
 
 		if (n <= 0)
 		{
 			_putchar(less);
 		}
+		_putchar('\n');
+	}
+	for (j = 1; j <= n; j++)
+	{
+		_putchar(' ');
 	}
 	_putchar('\n');
 }
