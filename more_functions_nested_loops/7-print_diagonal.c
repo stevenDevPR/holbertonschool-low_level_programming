@@ -19,7 +19,11 @@ void print_diagonal(int n)
 	{
 		for (j = 1; j <= i; j++)
 		{
+			if (j != 0)
+			{
+
 			_putchar(space);
+			}
 		}
 		_putchar(slash);
 
