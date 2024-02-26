@@ -11,10 +11,16 @@ void print_diagonal(int n)
 
 	char less = '\n';
 
+	char space = 32;
+
 	int i, j;
 
 	for (i = 1; i <= n; i++)
 	{
+		for (j = 1; j <= i; j++)
+		{
+			_putchar(space);
+		}
 		_putchar(slash);
 
 		if (n <= 0)
@@ -22,10 +28,6 @@ void print_diagonal(int n)
 			_putchar(less);
 		}
 		_putchar('\n');
-	}
-	for (j = 1; j <= n; j++)
-	{
-		_putchar(' ');
 	}
 	_putchar('\n');
 }
