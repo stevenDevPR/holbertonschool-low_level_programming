@@ -21,7 +21,6 @@ void print_diagonal(int n)
 		{
 			if (j != 0)
 			{
-
 			_putchar(space);
 			}
 		}
@@ -30,8 +29,8 @@ void print_diagonal(int n)
 		if (n <= 0)
 		{
 			_putchar(less);
-		}
-		_putchar('\n');
+		
 	}
 	_putchar('\n');
+}
 }
