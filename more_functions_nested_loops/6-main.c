@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	print_line(5);
+	print_line(0);
 
 	return (0);
 
