@@ -7,7 +7,7 @@
 
 void print_diagonal(int n)
 {
-	char slash = '\';
+	char slash = 92;
 
 	char less = '\n';
 
