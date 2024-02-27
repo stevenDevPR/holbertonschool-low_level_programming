@@ -9,7 +9,7 @@ void print_triangle(int size)
 {
 	int i, j;
 
-	for (i = size; i > 0; i--)
+	for (i = size; i >= 1; i--)
 	{
 		_putchar(' ');
 
