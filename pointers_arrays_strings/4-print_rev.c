@@ -23,8 +23,8 @@ void  print_rev(char *s)
 
 		for (j = i; j >= 0;)
 		{
-			write(1, &s[j], 1);
 			--j;
+			write(1, &s[j], 1);
 		}
 		_putchar('\n');
 }
