@@ -12,7 +12,8 @@ void swap_int(int *a, int *b)
 {
 	if ((a != NULL) && (b != NULL))
 	{
+		int temp = *a;
 		*a = *b;
-		*b = *a;
+		*b = temp;
 	}
 }
