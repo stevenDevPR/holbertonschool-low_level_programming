@@ -19,9 +19,14 @@ void rev_string(char *s)
 		}
 
 
-		for (reverse = i - 1; reverse >= 0; reverse--)
+		for (reverse = 0; reverse < i / 2; reverse++)
 		{
-			printf("%c", s[reverse]);
+			char temp = s[reverse];
+
+			s[reverse] = s[i - reverse - 1];
+
+			s[i - reverse - 1] = temp;
+
 		}
 		printf("\n");
 }
