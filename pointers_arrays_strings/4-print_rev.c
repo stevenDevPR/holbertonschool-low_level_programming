@@ -9,6 +9,7 @@
  *
  * Return: will return the value of i
  */
+int _strlen(char *s);
 
 void  print_rev(char *s)
 {
