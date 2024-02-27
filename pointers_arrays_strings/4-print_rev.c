@@ -21,9 +21,8 @@ void  print_rev(char *s)
 			i++;
 		}
 
-		for (j = i; j >= 0;)
+		for (j = i; j >= 0; j--)
 		{
-			--j;
 			write(1, &s[j], 1);
 		}
 		_putchar('\n');
