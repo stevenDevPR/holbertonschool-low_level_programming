@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 /**
  * print_rev - function that return the length of a string
  *
@@ -22,8 +23,8 @@ void  print_rev(char *s)
 
 		for (j = i; j >= 0;)
 		{
-			printf("%c", s[j]);
+			write(1, &s[j], 1);
 			j--;
 		}
-		printf("\n");
+		_putchar('\n');
 }
