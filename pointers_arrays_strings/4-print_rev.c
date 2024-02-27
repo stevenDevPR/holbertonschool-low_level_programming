@@ -22,7 +22,7 @@ void  print_rev(char *s)
 
 		len = i;
 
-		for (reverse = len -1; reverse >= 0; reverse--)
+		for (reverse = len - 1; reverse >= 0; reverse--)
 		{
 			_putchar(s[reverse]);
 		}
