@@ -9,15 +9,18 @@
  *
  * Return: will return the value of i
  */
-int _strlen(char *s);
 
 void  print_rev(char *s)
 {
 
-		int len;
-		int reverse;
+		int len, reverse, i = 0;
 
-		len = _strlen(s);
+		while (s[i] != '\0')
+		{
+			i++;
+		}
+
+		len = i;
 
 		for (reverse = len -1; reverse >= 0; reverse--)
 		{
