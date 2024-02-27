@@ -28,5 +28,5 @@ void rev_string(char *s)
 			s[i - reverse - 1] = temp;
 
 		}
-		printf("\n");
+
 }
