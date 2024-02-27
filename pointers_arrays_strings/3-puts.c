@@ -3,6 +3,8 @@
 #include <unistd.h>
 /**
  * _puts - main function to print the string
+ *
+ * @str: value of string
  */
 
 void _puts(char *str)
