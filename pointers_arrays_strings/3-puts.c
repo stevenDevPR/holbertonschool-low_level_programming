@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <unistd.h>
 /**
  * _puts - main function to print the string
  */
@@ -10,8 +11,8 @@ void _puts(char *str)
 
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
+		write(1, &str[i], 1);
 		i++;
 	}
-	printf("\n");
+	_putchar('\n');
 }
