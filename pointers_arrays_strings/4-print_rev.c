@@ -13,18 +13,14 @@
 void  print_rev(char *s)
 {
 
-		int i = 0;
 		int len;
+		int reverse;
 
-		while (s[i] != '\0')
-		{
-			i++;
-		}
-		len = i;
+		len = _strlen(s);
 
-		for (; len >= 0; len--)
+		for (reverse = len -1; reverse >= 0; reverse--)
 		{
-			write(1, &s[len], 1);
+			_putchar(s[reverse]);
 		}
 		_putchar('\n');
 }
