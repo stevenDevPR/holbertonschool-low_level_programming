@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * puts2 - main function to print sme numbers
+ *
+ * @str: value to check
+ */
 
 
 void puts2(char *str)
@@ -7,11 +12,11 @@ void puts2(char *str)
 
 	while (str[i] != '\0')
 	{
+		if (i % 2 == 0)
+		{
+		_putchar(str[i]);
+		}
 		i++;
 	}
-
-	for (i = 0; i <= i - 1; i++)
-	{
-			_putchar(str[i]);
-	}
+	_putchar('\n');
 }
