@@ -4,26 +4,23 @@
  * _atoi - main function
  *
  * @s: pointer
+ *
+ * Return: num * sign
  */
 
 int _atoi(char *s)
 {
-    int sign = 1;
-    int result = 0;
+	int sign = 1;
+	unsigned int num = 0;
 
-    while (*s == ' ' || (*s >= 9 && *s <= 13))
-        s++;
+	do {
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
 
-    while (*s == '-' || *s == '+') {
-        sign *= (*s++ == '-') ? -1 : 1;
-    }
-
-    while (*s >= '0' && *s <= '9') 
-    {
-        result = result * 10 + (*s - '0');
-        s++;
-    }
-
-    return sign * result;
+	return (num * sign);
 }
-
