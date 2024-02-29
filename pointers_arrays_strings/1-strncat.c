@@ -7,6 +7,8 @@
  *
  * @src: pointer of the source
  *
+ * @n: number of bytes to print
+ *
  * Return: dest
  */
 
@@ -20,7 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest++;
 	}
 
-	while (i < n && (char)*src != '\0')
+	while ((size_t)i < (size_t) n && (char)*src != '\0')
 	{
 		*dest++ = *src++;
 		i++;
