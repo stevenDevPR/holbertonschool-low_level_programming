@@ -17,17 +17,21 @@ char *_strncpy(char *dest, char *src, int n)
 	int i = 0;
 	char *origi_dest = dest;
 
-	while ((size_t)i < (size_t)n && *src != '\0')
+	if (*src == '\0')
 	{
+		while (i < n)
+		{
+			*dest++ = '\0';
+			i++;
+		}
+	}
+	else
+	{
+		while ((size_t)i < (size_t)n && *src != '\0')
+		{
 		*dest++ = *src++;
 		i++;
+		}
 	}
-
-	while (i < n)
-	{
-		*dest = '\0';
-		i++;
-	}
-
 	return (origi_dest);
 }
