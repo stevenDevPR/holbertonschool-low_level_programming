@@ -1,4 +1,11 @@
 #include "main.h"
+/**
+ * string_toupper - main funciton
+ *
+ * @str -pointer to string
+ *
+ * Return: str
+ */
 
 char *string_toupper(char *str)
 {
