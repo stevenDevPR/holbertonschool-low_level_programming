@@ -2,7 +2,7 @@
 /**
  * string_toupper - main funciton
  *
- * @str -pointer to string
+ * @str: pointer to string
  *
  * Return: str
  */
