@@ -23,5 +23,9 @@ char *_strncpy(char *dest, char *src, int n)
                 i++;
 	}
 
+	do {
+		*dest = '\0';
+	} while (*src == '\0');
+
         return (origi_dest);
 }
