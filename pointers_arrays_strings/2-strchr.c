@@ -6,12 +6,12 @@
  * @c: Character to locate.
  *
  * Return: Pointer to the first occurrence of the character c in the string s,
- *         or a pointer to the null-terminating character if c is not found.
+ *         or "nil" if c is not found.
  */
 char *_strchr(char *s, char c)
 {
     while (*s != '\0' && *s != c)
         s++;
 
-    return s;
+    return (*s == c) ? s : "nil";
 }
