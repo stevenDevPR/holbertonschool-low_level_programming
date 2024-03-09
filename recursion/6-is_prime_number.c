@@ -1,5 +1,5 @@
 #include "main.h"
-int(_is_prie_helper(int n, int divisor);
+int(_is_prime_helper(int n, int divisor));
 /**
  * is_prime_number - main funtion
  *
