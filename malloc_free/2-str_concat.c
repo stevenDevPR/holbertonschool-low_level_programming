@@ -35,12 +35,20 @@ char *str_concat(const char *s1, const char *s2)
 	ptr_result = result;
 
 	while (*s1)
-		*(ptr_result++) = *(s1++);
-	ptr_result = result +len_s1;
+	{
+		if (ptr_result - result < len_s1 + len_s2)
+			*(ptr_result++) = *(s1++);
+		else
+			break;
+	}
 
 	while (*s2)
-		*(ptr_result++) = *(s2++);
-
+	{
+		if (ptr_result - result < len_s1 +len_s2)
+			*(ptr_result++) = *(s2++);
+		else
+			break;
+	}
 	*ptr_result = '\0';
 
 	return (result);
