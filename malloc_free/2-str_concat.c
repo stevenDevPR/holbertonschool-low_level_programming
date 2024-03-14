@@ -7,50 +7,46 @@
  *
  * @s2: value pointer
  *
- * Return: result
+ * Return: concatenated
  */
 
 char *str_concat(const char *s1, const char *s2)
 {
-	size_t len_s1 = 0, len_s2 = 0;
-	const char *ptr_s1 = s1, *ptr_s2 = s2;
-	char *ptr_result;
-	char *result;
+	char *concatenated;
+	int sum = 0;
+	int i;
+	int lenone = 0;
+	int lentwo = 0;
 
-	if (!s1)
+	if (s1 == NULL)
+	{
 		s1 = "";
-	if (!s2)
+	}
+	if (s2 == NULL)
+	{
 		s2 = "";
-
-	while (*(ptr_s1++))
-		len_s1++;
-	while (*(ptr_s2++))
-		len_s2++;
-
-	result = malloc((len_s1 + len_s2 + 1) * sizeof(char));
-
-	if (!result)
+	}
+	while (s1[lenone])
+	{
+		lenone++;
+	}
+	while (s2[lentwo])
+	{
+		lentwo++;
+	}
+	sum = lenone + lentwo + 1;
+	concatenated = malloc(sizeof(char) * sum);
+	if (concatenated == 0)
+	{
 		return (NULL);
-
-	ptr_result = result;
-
-	while (*s1)
-	{
-		if (ptr_result - result < (ptrdiff_t) len_s1 + len_s2)
-			*(ptr_result++) = *(s1++);
-		else
-			break;
 	}
-
-	while (*s2)
+	for (i = 0; i < lenone; i++)
 	{
-		if (ptr_result - result < (ptrdiff_t) len_s1 +len_s2)
-			*(ptr_result++) = *(s2++);
-		else
-			break;
+		concatenated[i] = s1[i];
 	}
-	*ptr_result = '\0';
-
-	return (result);
+	for (i = 0; i < lentwo; i++)
+	{
+		concatenated[lenone + i] = s2[i];
+	}
+	return (concatenated);
 }
-
