@@ -36,7 +36,7 @@ char *str_concat(const char *s1, const char *s2)
 
 	while (*s1)
 	{
-		if (ptr_result - result < len_s1 + len_s2)
+		if (ptr_result - result < (ptrdiff_t) len_s1 + len_s2)
 			*(ptr_result++) = *(s1++);
 		else
 			break;
@@ -44,7 +44,7 @@ char *str_concat(const char *s1, const char *s2)
 
 	while (*s2)
 	{
-		if (ptr_result - result < len_s1 +len_s2)
+		if (ptr_result - result < (ptrdiff_t) len_s1 +len_s2)
 			*(ptr_result++) = *(s2++);
 		else
 			break;
