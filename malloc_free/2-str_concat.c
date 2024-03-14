@@ -36,6 +36,7 @@ char *str_concat(const char *s1, const char *s2)
 
 	while (*s1)
 		*(ptr_result++) = *(s1++);
+	ptr_result = result +len_s1;
 
 	while (*s2)
 		*(ptr_result++) = *(s2++);
