@@ -12,13 +12,6 @@ void *malloc_checked(unsigned int b)
 
 	if (ptr == NULL)
 	{
-		char *error_message = "Error: malloc failed\n";
-
-		while (*error_message)
-		{
-			_putchar(*error_message);
-			error_message++;
-		}
 		exit(98);
 	}
 	return (ptr);
