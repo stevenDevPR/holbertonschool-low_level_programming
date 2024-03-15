@@ -8,6 +8,8 @@
  *
  * Return: Always 0.
  */
+
+void *malloc_checked(unsigned int b);
 int main(void)
 {
     char *c;
