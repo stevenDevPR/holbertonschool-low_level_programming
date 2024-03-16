@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include "dog.h"
-void init_dog(struct dog *d, char *name, float age, char *owner);
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 int main(void)
 {
     struct dog my_dog;
