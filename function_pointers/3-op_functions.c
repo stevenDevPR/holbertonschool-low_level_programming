@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * op_sum - function that add integers
+ * op_add - function that add integers
  * @a: integer
  * @b: integer
  * Return: return the result
@@ -16,7 +16,7 @@ int op_add(int a, int b)
  * op_sub -  function that substract
  * @a: integer
  * @b: integer
- * Result: return the result
+ * Return: return the result
  */
 int op_sub(int a, int b)
 {
@@ -24,7 +24,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_divide - function that divide
+ * op_div - function that divide
  * @a: integer
  * @b: integer
  * Return: return the result
@@ -36,15 +36,16 @@ int op_div(int a, int b)
 		printf("Error\n");
 		exit(100);
 	}
-	return ( a / b);
+	return (a / b);
 }
 
 /**
- * op_mult - function to multiply
+ * op_mul - function to multiply
  * @a: integer
  * @b: integer
  * @Return: return the result
  */
+
 int op_mul(int a, int b)
 {
 	return (a * b);
@@ -54,7 +55,7 @@ int op_mul(int a, int b)
  * op_mod - function to modulo
  * @a: integer
  * @b: integer
- * Return: return the result
+ * Return: return modulo
  */
 int op_mod(int a, int b)
 {
