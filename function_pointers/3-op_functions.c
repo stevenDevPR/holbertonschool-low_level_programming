@@ -45,7 +45,7 @@ int op_div(int a, int b)
  * @b: integer
  * @Return: return the result
  */
-int op_mult(int a, int b)
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
