@@ -1,4 +1,4 @@
-#include "3-op_functions.h"
+#include "3-calc.h"
 #include <stdio.h>
 /**
  * op_sum - function that add integers
