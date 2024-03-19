@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * op_sum - function that add integers
  * @a: integer
@@ -28,14 +29,14 @@ int op_sub(int a, int b)
  * @b: integer
  * Return: return the result
  */
-int op_divide(int a, int b);
+int op_divide(int a, int b)
 {
 	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	return ( a / b)
+	return ( a / b);
 }
 
 /**
