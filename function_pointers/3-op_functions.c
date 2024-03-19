@@ -7,7 +7,7 @@
  * @b: integer
  * Return: return the result
  */
-int op_sum(int a, int b)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
@@ -29,7 +29,7 @@ int op_sub(int a, int b)
  * @b: integer
  * Return: return the result
  */
-int op_divide(int a, int b)
+int op_div(int a, int b)
 {
 	if (b == 0)
 	{

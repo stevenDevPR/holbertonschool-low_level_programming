@@ -11,10 +11,10 @@
 int (*get_op_func(char *s))(int, int)
 {
     op_t ops[] = {
-        {"+", op_sum},
+        {"+", op_add},
         {"-", op_sub},
         {"*", op_mult},
-        {"/", op_divide},
+        {"/", op_div},
         {"%", op_mod},
         {NULL, NULL}
     };
