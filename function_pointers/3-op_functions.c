@@ -43,7 +43,7 @@ int op_div(int a, int b)
  * op_mul - function to multiply
  * @a: integer
  * @b: integer
- * @Return: return the result
+ * Return: return the result
  */
 
 int op_mul(int a, int b)
