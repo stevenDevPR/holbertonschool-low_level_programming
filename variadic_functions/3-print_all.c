@@ -22,20 +22,18 @@ void print_all(const char * const format, ...)
 	    switch (type)
 	    {
 		    case 'c':
-			    printf("%c", va_arg(args, int));
+			    printf("%c, ", va_arg(args, int));
 			    break;
 		    case 'i':
-			    printf("%d", va_arg(args, int));
+			    printf("%d, ", va_arg(args, int));
 			    break;
 		    case 'f':
-			    printf("%f", (float)va_arg(args, double));
+			    printf("%f, ", (float)va_arg(args, double));
 			    break;
 		    case 's':
 			    str = va_arg(args, char *);
-			    printf("%s", str ? str : "(nil)");
+			    printf("%s, ", str ? str : "(nil)");
 			    break;
-		    default:
-			    printf("%c", type);
 	    }
     }
     va_end(args);
