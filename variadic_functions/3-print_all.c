@@ -35,12 +35,12 @@ void print_all(const char * const format, ...)
 			    break;
 		    case 's':
 			    str = va_arg(args, char *);
-			    while (str != NULL)
+			    if (str == NULL)
 			    {
-				    printf("%s", str);
-				    printed = 1;
+				    printf("(nil)");
 			    }
-			    printf("(nil)");
+			    printf("%s", str);
+			    printed = 1;
 			    break;
 		    default:
 			    break;
