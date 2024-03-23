@@ -1,11 +1,18 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadict_functions.h"
+/**
+ * print_numbers - main function to print
+ * @separator: separator value
+ * @n: value of number
+ */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
+
 	va_start(args, n);
+
 	unsigned int i;
 
 	for (i = 0; i < n; ++i)
