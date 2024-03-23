@@ -9,7 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	int first_arg = 1;
-	int printed_arg = 0;
+	int printed_arg;
 	char type;
 	char *str;
 	const char *tmp_format = format;
