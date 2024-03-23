@@ -39,8 +39,8 @@ void print_all(const char * const format, ...)
 	    if (!first_arg && *tmp_format)
 	    {
 		    printf(", ");
-		    first_arg = 0;
 	    }
+	    first_arg = 0;
     }
     va_end(args);
     printf("\n");
