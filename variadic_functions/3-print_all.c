@@ -8,7 +8,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	int irst_arg = 1;
+	int first_arg = 1;
 	char type;
 	char *str;
 	const char *tmp_format = format;
