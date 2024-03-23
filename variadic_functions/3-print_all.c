@@ -8,11 +8,10 @@
  */
 void print_all(const char * const format, ...)
 {
-    va_list args;
-    va_start(args, format);
-
-    char type;
-    char *str;
+	char type;
+	char *str;
+	va_list args;
+	va_start(args, format);
 
     while (*format)
     {
