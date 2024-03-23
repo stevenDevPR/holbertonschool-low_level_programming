@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 			    while (str != NULL)
 			    {
 				    printf("%s", str);
-				    printed = -1;
+				    printed = 1;
 			    }
 			    printf("(nil)");
 			    break;
