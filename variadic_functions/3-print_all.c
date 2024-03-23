@@ -14,10 +14,10 @@ void print_all(const char * const format, ...)
 	va_list args;
 	va_start(args, format);
 
-    while (*format)
+    while (*tmp_format)
     {
-	    type = *format;
-	    format++;
+	    type = tmp_*format;
+	    tmp_format++;
 
 	    switch (type)
 	    {
