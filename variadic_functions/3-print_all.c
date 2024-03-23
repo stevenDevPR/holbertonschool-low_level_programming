@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 	    type = *tmp_format;
 	    tmp_format++;
 
-	    if (!first_arg && *tmp_format)
+	    if ((!first_arg && *tmp_format) && *(tmp_format + 1))
 	    {
 		    printf(", ");
 	    }
