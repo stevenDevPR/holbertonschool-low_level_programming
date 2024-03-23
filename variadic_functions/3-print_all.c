@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 			    printf("%s", str ? str : "(nil)");
 			    break;
 	    }
-	    if (!first_arg && *tmp_format)
+	    if (!first_arg)
 	    {
 		    printf(", ");
 		    first_arg = 0;
