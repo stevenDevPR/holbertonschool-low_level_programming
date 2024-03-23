@@ -9,7 +9,6 @@
 void print_all(const char * const format, ...)
 {
 	int first_arg = 1;
-	int printed_arg = 0;
 	char type;
 	char *str;
 	const char *tmp_format = format;
@@ -24,7 +23,6 @@ void print_all(const char * const format, ...)
 	    if (!first_arg && *tmp_format)
 	    {
 		    printf(", ");
-		    printed_arg = 1;
 	    }
 
 	    switch (type)
