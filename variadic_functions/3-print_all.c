@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 
     while (*tmp_format)
     {
-	    type = tmp_*format;
+	    type = *tmp_format;
 	    tmp_format++;
 
 	    switch (type)
