@@ -39,10 +39,7 @@ void print_all(const char * const format, ...)
 			    {
 				    printf("(nil)");
 			    }
-			    while (str != NULL)
-			    {
 				    printf("%s", str);
-			    }
 			    printed = 1;
 			    break;
 		    default:
