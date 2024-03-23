@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 
     while (format && format[i])
     {
-	    if (printed)
+	    while (printed)
 		    printf(", ");
 
 	    switch (format[i])
@@ -39,7 +39,10 @@ void print_all(const char * const format, ...)
 			    {
 				    printf("(nil)");
 			    }
+			    if (str)
+			    {
 				    printf("%s", str);
+			    }
 			    printed = 1;
 			    break;
 		    default:
