@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
-
 #define BUFFER_SIZE 1024
-
 /**
  * main - Entry point
  * @argc: Argument count
