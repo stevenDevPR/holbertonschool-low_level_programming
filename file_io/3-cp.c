@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 	if (close(fd_from) == -1 || close(fd_to) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd\n", (close(fd_from) == -1) ?
-				fd_from : fd_to, exit(100);
+				fd_from : fd_to, exit(100));
 
 	return (0);
 }
